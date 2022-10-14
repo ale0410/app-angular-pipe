@@ -1,0 +1,10 @@
+<p>tabla works!</p>
+<input type="text" placeholder="Ingrese Texto" [(ngModel)]="textoFiltro">
+<input type="text" placeholder="Ingrese Texto" [(ngModel)]="textoFiltro2">
+<div *ngFor="let fer of feriados | filtro: textoFiltro">
+  {{fer.motivo || false}} {{fer.original}} {{fer.dia}}/{{fer.mes}}
+</div>
+
+<!--<div *ngFor="let day of dias | filtro: textoFiltro">
+  {{fer.motivo}} {{fer.original}} {{fer.dia}}/{{fer.mes}}
+</div>-->
